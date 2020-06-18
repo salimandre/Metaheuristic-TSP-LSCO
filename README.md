@@ -1,5 +1,7 @@
 # Metaheuristic Assignment
 
+We ran our py scripts in a virtual environment. list of package can be found in py folder as well as our python scripts. Code is straightforward to use also for tsp it is required to have folders dj38 and qa194 with json, jpg and txt files.
+
 ## Large Scale Continuous Optimization
 
 As we wanted to see how well perform **Particle Swarm Optimization** on different objective functions and in different dimension settings we only used this one algorithm. We used the library **Pyswarms** for PSO evaluations. Pyswarms was able to handle boundary constraints although we think there were more powerful available implementations that we missed.
