@@ -1,0 +1,8 @@
+{
+	"name": "qa194",
+	"coord": "qa194.txt",
+	"n_cities": 194,
+	"img": "qamap.jpg",
+	"img_dim": [348,376],
+	"extent_axes_window": [-130,374,-135,405]
+}

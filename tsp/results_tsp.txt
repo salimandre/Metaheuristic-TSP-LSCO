@@ -1,0 +1,122 @@
+*******************
+*** 	DJ38	***
+*******************
+
+***** greedy policy *****
+
+best cost: 6771.534590959323
+avg cost: 6771.534590959323
+comput. time: 0.012 s
+stop. criterion: when hamiltonian
+
+***** 2-swap *****
+
+best cost: 8111.6
+avg cost: 9978.8
+comput. time: 0.24 s
+stop. criterion: 100000 iters or when all 2-swap neighbors (roughly n_cities^2/2) of current graph have been visited
+
+***** 3-swap *****
+
+best cost: 7937.7
+avg cost: 9349.3
+comput. time: 6.75 s
+stop. criterion: 100000 iters or when all 3-swap neighbors (roughly n_cities^3/6) of current graph have been visited
+
+***** 2-swap + greedy *****
+
+best cost: 6664.1
+avg cost: 6723.4
+comput. time: 0.11 s
+stop. criterion: 100000 iters or when all 2-swap neighbors (roughly n_cities^2/2) of current graph have been visited
+
+***** 3-swap + greedy *****
+
+best cost: 6659.4
+avg cost: 6659.4
+comput. time: 4.12 s
+stop. criterion: 100000 iters or when all 3-swap neighbors (roughly n_cities^3/6) of current graph have been visited
+
+***** 2-opt *****
+
+best cost: 6659.4
+avg cost: 7353.0
+comput. time: 0.1 s
+stop. criterion: 10000 iters or when all 2-opt neighbors (roughly (n_cities-1)^2/2) of current graph have been visited
+
+***** 2-opt + greedy *****
+
+best cost: 6664.1
+avg cost: 6694.6
+comput. time: 0.01 s
+stop. criterion: 10000 iters or when all 2-opt neighbors (roughly (n_cities-1)^2/2) of current graph have been visited
+
+*******************
+*** 	QA194	***
+*******************
+
+***** greedy policy *****
+
+best cost: 12346.9
+avg cost: 12346.9
+comput. time: 0.36 s
+stop. criterion: when hamiltonian
+
+***** 2-swap *****
+
+best cost: 18409.6
+avg cost: 20028.8
+comput. time: 39.7 s
+stop. criterion: 250000 iters or when all 2-swap neighbors (roughly n_cities^2/2) of current graph have been visited
+
+***** 3-swap *****
+
+NONE
+
+***** 2-swap + greedy *****
+
+best cost: 11318.5
+avg cost: 11515.8
+comput. time: 8.1 s
+stop. criterion: 250000 iters or when all 2-swap neighbors (roughly n_cities^2/2) of current graph have been visited
+
+***** 3-swap + greedy *****
+
+NONE
+
+***** 2-opt *****
+
+best cost: 10108.0
+avg cost: 10520.8
+comput. time: 32.2 s
+stop. criterion: 250000 iters or when all 2-opt neighbors (roughly (n_cities-1)^2/2) of current graph have been visited
+
+***** 2-opt + greedy *****
+
+best cost: 9931.1
+avg cost: 10078.4
+comput. time: 11.9 s
+stop. criterion: 250000 iters or when all 2-opt neighbors (roughly (n_cities-1)^2/2) of current graph have been visited
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
