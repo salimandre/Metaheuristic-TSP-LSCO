@@ -8,9 +8,7 @@ For dim 50 we used a budget of 250K evaluations and for dim 500 a budget of 1.25
 
 In dim 50 we tried two settings 1000 particles with 250 iterations and 5000 particles with 50 iterations. The latter proved to be better on Sphere and Rosenbrock functions. In dim 500 we tried the following two settings: 5000 particles with 250 iterations and 10000 particles with 100 iterations but they provided similar results.
 
-We could observ the **curse of dimensionality**. For Rosenbrock and Sphere the domain is [-100, 100]^D whose volume increases exponentially with the dimension plus the sphere function tends to become shaper and sharper.
-Results could have been improved by taking more particles but it is expensive in RAM and leads to matrix computations in high dimension. The library we used was not suited for that. Although Pyswarms was able to handle boundary constraints.
-
+We could observ the **curse of dimensionality**. For Rosenbrock and Sphere the domain is [-100, 100]^D whose volume increases exponentially with the dimension plus the sphere function tends to become shaper and sharper. Hence for some of the functions and domains it requires more and more ressources as the dimension increases to achieve good results. Results could have been improved by taking more particles but it is expensive in RAM and leads to matrix computations in high dimension. The library we used was not suited for that. Although Pyswarms was able to handle boundary constraints. 
 
 | Code CEC’08 | Name | Dim | Bounds | Min. Value | Algo | Particles | Iter. | Evals | Stop. Criteria | Cognitive | Social | Inertia | Comput. Time (s) | # runs | Mean Value | Median Value | Best Value | Plot |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -32,6 +30,12 @@ Results could have been improved by taking more particles but it is expensive in
 | F6 | Shifted Ackley | 500 | [−32,32] | -140 | PSO | 5000 | 250 | 1.25M | n_evals | 0.4 | 0.3 | 0.8 | 64.0 | 25 | -119.6 | -119.6 | -119.6 | <img src="/cec2018/ackley/shifted_Ackley_pso_500.png" height="50" width="100"> |
 
 ## Discrete Optimization: TSP
+
+During the course I had already implemented my homemade version of genetic algorithm and I had applied it to TSP (https://github.com/salimandre/metaheuristics). This time for a change I chose to go for **Local Search Algorithms** namely 2-swap, 3-swap, 2-opt and a **Greedy Algorithm**. Here I implemented everything myself.
+
+In k-swap at each step we perform a permutation of k cities in the path and we keep it if it decreases the total distance. In k-opt at each step we remove k edges from the path and we add k new edges that we keep if it decreases the total distance. We used also a greedy policy as a baseline and as an initialization. We connect each city with the closest city.
+
+2-opt with greedy policy proved to provide convincing results and in a short amount of time. In order to improve results we could have added some technique such as Simulated Annealing to avoid being stuck to quickly in local minima. Also if we had to deal with larger sized TSP we could have used Kdtree in order to make computations more effective.
 
 ### dj38
 
