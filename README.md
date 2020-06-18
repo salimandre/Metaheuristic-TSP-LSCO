@@ -26,7 +26,7 @@
 
 | Algo | Iters | Stop. Criteria | Comput. Time (s) | # runs | Mean Value | Best Value | Plot |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Greedy | 700 | when Hamiltonian | 0.012 | 10 | 6771.5 | 6771.5 | <img src="/tsp/data/dj38/plots/dj38_greedy_cost.png" height="100" width="100"> |
+| Greedy | 700 | when Hamiltonian | 0.012 | 10 | 6771.5 | 6771.5 | <img src="/tsp/data/dj38/plots/dj38_greedy_cost.png" height="50" width="50"> |
 | 2-swap | 100K | n_iters or when all 2-swap neighbors of graph have been visited | 0.24 | 10| 9978.8 | 8111.6 |<img src="/tsp/data/dj38/plots/dj38_2_swap_cost.png" height="50" width="50"> |
 | 2-swap + Greedy | 100K | n_iters or when all 2-swap neighbors of graph have been visited | 0.11 | 10 | 6723.4 | 6664.1 |<img src="/tsp/data/dj38/plots/dj38_2_swap_greedy_cost.png" height="50" width="50"> |
 | 3-swap | 100K | n_iters or when all 3-swap neighbors of graph have been visited | 6.75 | 10 | 9349.3 | 7937.7 |<img src="/tsp/data/dj38/plots/dj38_3_swap_cost.png" height="50" width="50"> |
