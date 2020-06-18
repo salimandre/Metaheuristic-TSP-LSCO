@@ -1,6 +1,6 @@
 # Metaheuristic Assignment
 
-We ran our py scripts in a virtual environment whose list of packages can be found in py folder as well as our python scripts. Code is straightforward to use also for tsp it is required to have folders dj38 and qa194 with json, jpg and txt files.
+We ran our py scripts in a virtual environment whose list of packages can be found in py folder as well as our python scripts. Code is straightforward to use although for tsp it is required to have our own folders dj38 and qa194 with json, jpg and txt files.
 
 ## Large Scale Continuous Optimization
 
