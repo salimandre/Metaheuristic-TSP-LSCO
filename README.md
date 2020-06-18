@@ -33,7 +33,7 @@ We could observe the **curse of dimensionality**. For Rosenbrock and Sphere the 
 
 ## Discrete Optimization: TSP
 
-During the course we had already implemented our homemade version of genetic algorithm and applied it to TSP (https://github.com/salimandre/metaheuristics). This time for a change we chose to go for **Local Search Algorithms** namely 2-swap, 3-swap, 2-opt and a **Greedy Algorithm**. Here we implemented everything myself.
+During the course we had already implemented our homemade version of genetic algorithm and applied it to TSP (https://github.com/salimandre/metaheuristics). This time for a change we chose to go for **Local Search Algorithms** namely 2-swap, 3-swap, 2-opt and a **Greedy Algorithm**. Here we implemented everything ourself.
 
 In k-swap at each step we perform a permutation of k cities in the path and we keep it if it decreases the total distance. In k-opt at each step we remove k edges from the path and we add k new edges that we keep if it decreases the total distance. We used also a greedy policy as a baseline and as an initialization. We connect each city with the closest city.
 
