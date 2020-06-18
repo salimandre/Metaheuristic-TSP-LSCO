@@ -7,6 +7,4 @@
 | F3 | Shifted Rosenbrock | 50 | [−100,100] | 390 | PSO | 5000 | 50 | 250K | 0.4 | 0.3 | 0.8 | 6.7 | 28753075.4 | 19607298.2 | 1771071.4 | <img src="/cec2018/rosenbrock/shifted_Rosenbrock_pso_50_bis.png" height="50" width="100"> |
 | F4 | Shifted Rastrigin | 50 | [−5,5] | -330 | PSO | 1000 | 250 | 250K | 0.4 | 0.3 | 0.8 | 8.7 | -3.6 | 1.3 | -87.4 | <img src="/cec2018/rastrigin/shifted_Rastrigin_pso_50.png" height="50" width="100"> |
 | F5 | Shifted Griewank | 50 | [−600, 600] | -180 | PSO | 1000 | 250 | 250K | 0.4 | 0.3 | 0.8 | 9.8 | -106.9 | -115.9 | -143.8 | <img src="/cec2018/griewank/shifted_Griewank_pso_50.png" height="50" width="100"> |
-| F6 | Shifted Ackley | 50 | [−32,32] | -140 | PSO | 1000 | 250 | 250K | 0.4 | 0.3 | 0.8 | 5.7 | -126.2 | -126.2 | -130.4 |
-
-17
+| F6 | Shifted Ackley | 50 | [−32,32] | -140 | PSO | 1000 | 250 | 250K | 0.4 | 0.3 | 0.8 | 5.7 | -126.2 | -126.2 | -130.4 | <img src="/cec2018/ackley/shifted_Ackley_pso_50.png" height="50" width="100"> |
