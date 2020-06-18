@@ -2,13 +2,13 @@
 
 ## Large Scale Continuous Optimization
 
-As we wanted to see how well perform **Particle Swarm Optimization** on different objective functions and in different dimension settings we only used this one algorithm. We used the library **Pyswarms** for PSO evaluations.
+As we wanted to see how well perform **Particle Swarm Optimization** on different objective functions and in different dimension settings we only used this one algorithm. We used the library **Pyswarms** for PSO evaluations. Pyswarms was able to handle boundary constraints although I think there were more powerful available implementations that I missed.
 
 For dim 50 we used a budget of 250K evaluations and for dim 500 a budget of 1.25M evaluations. We chose our cognitive, social and inertia parameters by performing a **random search** among 100 settings and each setting was evaluated 10 times on the Shifted Sphere function in dim 50. We kept these same parameters for every other computations. 
 
 In dim 50 we tried two settings 1000 particles with 250 iterations and 5000 particles with 50 iterations. The latter proved to be better on Sphere and Rosenbrock functions. In dim 500 we tried the following two settings: 5000 particles with 250 iterations and 10000 particles with 100 iterations but they provided similar results.
 
-We could observ the **curse of dimensionality**. For Rosenbrock and Sphere the domain is [-100, 100]^D whose volume increases exponentially with the dimension plus the sphere function tends to become shaper and sharper. Hence for some of the functions and domains it requires more and more ressources as the dimension increases to achieve good results. Results could have been improved by taking more particles but it is expensive in RAM and leads to matrix computations in high dimension. The library we used was not suited for that. Although Pyswarms was able to handle boundary constraints. 
+We could observ the **curse of dimensionality**. For Rosenbrock and Sphere the domain is [-100, 100]^D whose volume increases exponentially with the dimension plus the sphere function tends to become shaper and sharper. Hence for some of the functions and domains it requires more and more ressources as the dimension increases to achieve good results. Results could have been improved by taking more particles but it is expensive in RAM and leads to matrix computations in high dimension. The library we used was not suited for that.
 
 | Code CEC’08 | Name | Dim | Bounds | Min. Value | Algo | Particles | Iter. | Evals | Stop. Criteria | Cognitive | Social | Inertia | Comput. Time (s) | # runs | Mean Value | Median Value | Best Value | Plot |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -35,7 +35,7 @@ During the course I had already implemented my homemade version of genetic algor
 
 In k-swap at each step we perform a permutation of k cities in the path and we keep it if it decreases the total distance. In k-opt at each step we remove k edges from the path and we add k new edges that we keep if it decreases the total distance. We used also a greedy policy as a baseline and as an initialization. We connect each city with the closest city.
 
-2-opt with greedy policy proved to provide convincing results and in a short amount of time. In order to improve results we could have added some technique such as Simulated Annealing to avoid being stuck to quickly in local minima. Also if we had to deal with larger sized TSP we could have used Kdtree in order to make computations more effective.
+2-opt with greedy policy proved to provide convincing results and in a short amount of time. In order to improve results we could have added some technique such as Simulated Annealing to avoid being stuck too quickly in local minima. Also if we had to deal with larger sized TSP we could have used Kdtree in order to make computations more efficient.
 
 ### dj38
 
