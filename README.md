@@ -8,7 +8,7 @@ For dim 50 we used a budget of 250K evaluations and for dim 500 a budget of 1.25
 
 In dim 50 we tried two settings 1000 particles with 250 iterations and 5000 particles with 50 iterations. The latter proved to be better on Sphere and Rosenbrock functions. In dim 500 we tried the following two settings: 5000 particles with 250 iterations and 10000 particles with 100 iterations but they provided similar results.
 
-We could observ the **curse of dimensionality** for some functions and domains. For Rosenbrock and Sphere the domain is [-100, 100]^D whose volume increases exponentially with the dimension plus the sphere function tends to become shaper and sharper.
+We could observ the **curse of dimensionality**. For Rosenbrock and Sphere the domain is [-100, 100]^D whose volume increases exponentially with the dimension plus the sphere function tends to become shaper and sharper.
 Results could have been improved by taking more particles but it is expensive in RAM and leads to matrix computations in high dimension. The library we used was not suited for that. Although Pyswarms was able to handle boundary constraints.
 
 
