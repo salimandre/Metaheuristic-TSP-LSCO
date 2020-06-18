@@ -1,5 +1,6 @@
 # Metaheuristic Assignment
 
+|             |          Grouping           ||
 | Code CEC’08 | Name | Dim | Bounds | Min. Value | Algo | Particles | Iter. | Evals | Cognitive | Social | Inertia | Comput. Time (s) | Mean Value | Median Value | Best Value | Plot |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | F1 | Shifted Sphere | 50 | [−100,100] | -450 | PSO | 5000 | 50 | 250K | 0.4 | 0.3 | 0.8 | 1.9 | 5690.8 | 5540.3 | 2512.7 | <img src="/cec2018/sphere/shifted_sphere_pso_50_bis.png" height="50" width="100"> |
