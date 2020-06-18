@@ -1,4 +1,4 @@
-# Metaheuristic-Assignment
+# Metaheuristic Assignment
 
 | Code CEC’08 | Name | Dim | Bounds |
 | --- | --- | --- | --- |
