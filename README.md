@@ -20,7 +20,7 @@
 | F5 | Shifted Griewank | 500 | [−600, 600] | -180 | PSO | 5000 | 250 | 1.25M | 0.4 | 0.3 | 0.8 | 21.5 | 8509.6 | 8456.2 | 8105.1 | <img src="/cec2018/griewank/shifted_Griewank_pso_500.png" height="50" width="100"> |
 | F6 | Shifted Ackley | 500 | [−32,32] | -140 | PSO | 5000 | 250 | 1.25M | 0.4 | 0.3 | 0.8 | 64.0 | -119.6 | -119.6 | -119.6 | <img src="/cec2018/ackley/shifted_Ackley_pso_500.png" height="50" width="100"> |
 
-## Discrete Optimization
+## Discrete Optimization: TSP
 
 ### dj38
 
