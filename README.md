@@ -27,9 +27,10 @@
 <p align="center">
   <img src="tsp/gif/dj38_2_opt.gif" width="24%">
   <img src="tsp/gif/dj38_3_swap.gif" width="24%">
+</p>
+<p align="center">
   respectively 2-opt and 3-swap applied to dj38 with random initializaion
 </p>
-
 ### qa194
 
 <p align="center">
