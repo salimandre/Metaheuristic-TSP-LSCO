@@ -24,15 +24,15 @@
 
 ### dj38
 
-| Algo | Stop. Criteria | Comput. Time (s) | Mean Value | Median Value | Best Value | Plot |
-| --- | --- | --- | --- | --- | --- | --- |
-| Greedy | | | | | | |
-| 2-swap | | | | | | |
-| 2-swap + Greedy | | | | | | |
-| 3-swap | | | | | | |
-| 3-swap + Greedy | | | | | | |
-| 2-opt | | | | | | |
-| 2-opt + Greedy | | | | | | |
+| Algo | Iters | Stop. Criteria | Comput. Time (s) | Mean Value | Median Value | Best Value | Plot |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Greedy | 700 |  | | | | | |
+| 2-swap | 100K | n_iters or when all 2-swap neighbors of graph have been visited | | | | |
+| 2-swap + Greedy | 100K | n_iters or when all 2-swap neighbors of graph have been visited  | | | | | |
+| 3-swap | 100K | n_iters or when all 3-swap neighbors of graph have been visited  | | | | | |
+| 3-swap + Greedy | 100K | n_iters or when all 3-swap neighbors of graph have been visited | | | | | |
+| 2-opt | 10K | n_iters or when all 2-opt neighbors of graph have been visited | | | | |
+| 2-opt + Greedy | 10K | n_iters or when all 2-opt neighbors of graph have been visited | | | | |
 
 <p align="center">
   <img src="tsp/gif/dj38_2_opt.gif" width="24%">
