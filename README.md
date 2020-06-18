@@ -23,9 +23,8 @@
 ## Discrete Optimization
 
 <p align="center">
-<figure class="image">
   <img src="tsp/gif/dj38_2_opt.gif" width="24%">
-  <figcaption>"hello there"</figcaption>
+  <img src="tsp/gif/dj38_3_swap.gif" width="24%">
 </figure>
 
 
