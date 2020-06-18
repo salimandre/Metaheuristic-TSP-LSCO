@@ -24,6 +24,9 @@
 
 ### dj38
 
+| Algo | Stop. Criteria | Comput. Time (s) | Mean Value | Median Value | Best Value | Plot |
+| --- | --- | --- | --- | --- | --- | --- |
+
 <p align="center">
   <img src="tsp/gif/dj38_2_opt.gif" width="24%">
   <img src="tsp/gif/dj38_3_swap.gif" width="24%">
