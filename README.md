@@ -44,6 +44,14 @@
 
 ### qa194
 
+| Algo | Iters | Stop. Criteria | Comput. Time (s) | # runs | Mean Value | Best Value | Plot |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Greedy | 250K | when Hamiltonian | 0.36 | 10 | 12346.9 | 12346.9 | |
+| 2-swap | 250K | n_iters or when all 2-swap neighbors of graph have been visited | 39.7 | 10| 20028.8 | 18409.6 | |
+| 2-swap + Greedy | 250K | n_iters or when all 2-swap neighbors of graph have been visited | 8.1 | 10 | 11515.8 | 11318.5 | |
+| 2-opt | 250K | n_iters or when all 2-opt neighbors of graph have been visited | 32.2 | 10 | 10520.8 | 10108.0 | |
+| 2-opt + Greedy | 250K | n_iters or when all 2-opt neighbors of graph have been visited | 11.9 | 10 | 10078.4 | 9931.1 | |
+
 <p align="center">
   <img src="tsp/gif/qa194_2_opt_greedy.gif" width="24%">
 </p>
