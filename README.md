@@ -26,13 +26,13 @@
 
 | Algo | Iters | Stop. Criteria | Comput. Time (s) | # runs | Mean Value | Best Value | Plot |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Greedy | 700 | when Hamiltonian | 0.012 | 10 | | | |
-| 2-swap | 100K | n_iters or when all 2-swap neighbors of graph have been visited | 0.24 | 10| | | |
-| 2-swap + Greedy | 100K | n_iters or when all 2-swap neighbors of graph have been visited | 0.11 | 10 | | | |
-| 3-swap | 100K | n_iters or when all 3-swap neighbors of graph have been visited | 6.75 | 10 | | | |
-| 3-swap + Greedy | 100K | n_iters or when all 3-swap neighbors of graph have been visited | 4.12 | 10 | | | |
-| 2-opt | 10K | n_iters or when all 2-opt neighbors of graph have been visited | 0.1 | 10 | | | |
-| 2-opt + Greedy | 10K | n_iters or when all 2-opt neighbors of graph have been visited | 0.01 | 10 | | | |
+| Greedy | 700 | when Hamiltonian | 0.012 | 10 | 6771.5 | 6771.5 | |
+| 2-swap | 100K | n_iters or when all 2-swap neighbors of graph have been visited | 0.24 | 10| 9978.8 | 8111.6 | |
+| 2-swap + Greedy | 100K | n_iters or when all 2-swap neighbors of graph have been visited | 0.11 | 10 | 6723.4 | 6664.1 | |
+| 3-swap | 100K | n_iters or when all 3-swap neighbors of graph have been visited | 6.75 | 10 | 9349.3 | 7937.7 | |
+| 3-swap + Greedy | 100K | n_iters or when all 3-swap neighbors of graph have been visited | 4.12 | 10 | 6659.4 | 6659.4 | |
+| 2-opt | 10K | n_iters or when all 2-opt neighbors of graph have been visited | 0.1 | 10 | 7353.0 | 6659.4 | |
+| 2-opt + Greedy | 10K | n_iters or when all 2-opt neighbors of graph have been visited | 0.01 | 10 | 6694.6 | 6664.1 | |
 
 <p align="center">
   <img src="tsp/gif/dj38_2_opt.gif" width="24%">
