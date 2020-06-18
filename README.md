@@ -26,6 +26,13 @@
 
 | Algo | Stop. Criteria | Comput. Time (s) | Mean Value | Median Value | Best Value | Plot |
 | --- | --- | --- | --- | --- | --- | --- |
+| Greedy | | | | | | |
+| 2-swap | | | | | | |
+| 2-swap + Greedy | | | | | | |
+| 3-swap | | | | | | |
+| 3-swap + Greedy | | | | | | |
+| 2-opt | | | | | | |
+| 2-opt + Greedy | | | | | | |
 
 <p align="center">
   <img src="tsp/gif/dj38_2_opt.gif" width="24%">
