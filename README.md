@@ -63,7 +63,7 @@ In k-swap at each step we perform a permutation of k cities in the path and we k
 
 | Algo | Iters | Stop. Criteria | Comput. Time (s) | # runs | Mean Value | Best Value | Plot |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Greedy | 250K | when Hamiltonian | 0.36 | 10 | 12346.9 | 12346.9 |<img src="/tsp/data/qa194/plots/qa194_greedy_cost.png" height="50" width="50"> |
+| Greedy | 20K | when Hamiltonian | 0.36 | 10 | 12346.9 | 12346.9 |<img src="/tsp/data/qa194/plots/qa194_greedy_cost.png" height="50" width="50"> |
 | 2-swap | 250K | n_iters or when all 2-swap neighbors of graph have been visited | 39.7 | 10| 20028.8 | 18409.6 |<img src="/tsp/data/qa194/plots/qa194_2_swap_cost.png" height="50" width="50"> |
 | 2-swap + Greedy | 250K | n_iters or when all 2-swap neighbors of graph have been visited | 8.1 | 10 | 11515.8 | 11318.5 |<img src="/tsp/data/qa194/plots/qa194_2_swap_greedy_cost.png" height="50" width="50"> |
 | 2-opt | 250K | n_iters or when all 2-opt neighbors of graph have been visited | 32.2 | 10 | 10520.8 | 10108.0 |<img src="/tsp/data/qa194/plots/qa194_2_opt_cost.png" height="50" width="50"> |
