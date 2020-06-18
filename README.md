@@ -2,7 +2,7 @@
 
 ## Large Scale Continuous Optimization
 
-As we wanted to see how well perform **Particle Swarm Optimization** on different objective functions and in different dimension settings we only used this one algorithm. We used the library **Pyswarms** for PSO evaluations. Pyswarms was able to handle boundary constraints although I think there were more powerful available implementations that I missed.
+As we wanted to see how well perform **Particle Swarm Optimization** on different objective functions and in different dimension settings we only used this one algorithm. We used the library **Pyswarms** for PSO evaluations. Pyswarms was able to handle boundary constraints although we think there were more powerful available implementations that I missed.
 
 For dim 50 we used a budget of 250K evaluations and for dim 500 a budget of 1.25M evaluations. We chose our cognitive, social and inertia parameters by performing a **random search** among 100 settings and each setting was evaluated 10 times on the Shifted Sphere function in dim 50. We kept these same parameters for every other computations. 
 
@@ -31,7 +31,7 @@ We could observ the **curse of dimensionality**. For Rosenbrock and Sphere the d
 
 ## Discrete Optimization: TSP
 
-During the course I had already implemented my homemade version of genetic algorithm and I had applied it to TSP (https://github.com/salimandre/metaheuristics). This time for a change I chose to go for **Local Search Algorithms** namely 2-swap, 3-swap, 2-opt and a **Greedy Algorithm**. Here I implemented everything myself.
+During the course we had already implemented my homemade version of genetic algorithm and I had applied it to TSP (https://github.com/salimandre/metaheuristics). This time for a change we chose to go for **Local Search Algorithms** namely 2-swap, 3-swap, 2-opt and a **Greedy Algorithm**. Here we implemented everything myself.
 
 In k-swap at each step we perform a permutation of k cities in the path and we keep it if it decreases the total distance. In k-opt at each step we remove k edges from the path and we add k new edges that we keep if it decreases the total distance. We used also a greedy policy as a baseline and as an initialization. We connect each city with the closest city.
 
