@@ -9,4 +9,4 @@
 | F5 | Shifted Griewank | 50 | [−600, 600] | -180 | PSO | 1000 | 250 | 250K | 0.4 | 0.3 | 0.8 | 9.8 | -106.9 | -115.9 | -143.8
 | F6 | Shifted Ackley | 50 | [−32,32] | -140 | PSO | 1000 | 250 | 250K | 0.4 | 0.3 | 0.8 | 5.7 | -126.2 | -126.2 | -130.4 |
 
-<img src="/cec2018/sphere/shifted_sphere_pso_50_bis.png" height="100" width="400">
+<img src="/cec2018/sphere/shifted_sphere_pso_50_bis.png" height="200" width="400">
