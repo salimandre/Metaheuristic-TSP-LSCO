@@ -29,10 +29,13 @@
   <img src="tsp/gif/dj38_3_swap.gif" width="24%">
 </p>
 <p align="center">
-  respectively 2-opt and 3-swap applied to dj38 with random initializaion
+  respectively 2-opt and 3-swap with random initializaion applied to dj38
 </p>
 ### qa194
 
 <p align="center">
   <img src="tsp/gif/qa194_2_opt_greedy.gif" width="24%">
+</p>
+<p align="center">
+  2-opt with greedy initializaion applied to dj38
 </p>
