@@ -2,6 +2,16 @@
 
 ## Large Scale Continuous Optimization
 
+As we wanted to see how well perform **Particle Swarm Optimization** on different objective functions and in different dimension settings we only used this one algorithm. We used the library **Pyswarms** for PSO evaluations.
+
+For dim 50 we used a budget of 250K evaluations and for dim 500 a budget of 1.25M evaluations. We chose our cognitive, social and inertia parameters by performing a **random search** among 100 settings and each setting was evaluated 10 times on the Shifted Sphere function in dim 50. We kept these same parameters for every other computations. 
+
+In dim 50 we tried two settings 1000 particles with 250 iterations and 5000 particles with 50 iterations. The latter proved to be better on Sphere and Rosenbrock functions. In dim 500 we tried the following two settings: 5000 particles with 250 iterations and 10000 particles with 100 iterations but they provided similar results.
+
+We could observ the **curse of dimensionality** for some functions and domains. For Rosenbrock and Sphere the domain is [-100, 100]^D whose volume increases exponentially with the dimension plus the sphere function tends to become shaper and sharper.
+Results could have been improved by taking more particles but it is expensive in RAM and leads to matrix computations in high dimension. The library we used was not suited for that. Although Pyswarms was able to handle boundary constraints.
+
+
 | Code CEC’08 | Name | Dim | Bounds | Min. Value | Algo | Particles | Iter. | Evals | Stop. Criteria | Cognitive | Social | Inertia | Comput. Time (s) | # runs | Mean Value | Median Value | Best Value | Plot |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | F1 | Shifted Sphere | 50 | [−100,100] | -450 | PSO | 5000 | 50 | 250K | n_evals | 0.4 | 0.3 | 0.8 | 1.9 | 25 | 5690.8 | 5540.3 | 2512.7 | <img src="/cec2018/sphere/shifted_sphere_pso_50_bis.png" height="50" width="100"> |
@@ -10,6 +20,7 @@
 | F4 | Shifted Rastrigin | 50 | [−5,5] | -330 | PSO | 1000 | 250 | 250K | n_evals | 0.4 | 0.3 | 0.8 | 8.7 | 25 | -3.6 | 1.3 | -87.4 | <img src="/cec2018/rastrigin/shifted_Rastrigin_pso_50.png" height="50" width="100"> |
 | F5 | Shifted Griewank | 50 | [−600, 600] | -180 | PSO | 1000 | 250 | 250K | n_evals | 0.4 | 0.3 | 0.8 | 9.8 | 25 | -106.9 | -115.9 | -143.8 | <img src="/cec2018/griewank/shifted_Griewank_pso_50.png" height="50" width="100"> |
 | F6 | Shifted Ackley | 50 | [−32,32] | -140 | PSO | 1000 | 250 | 250K | n_evals | 0.4 | 0.3 | 0.8 | 5.7 | 25 | -126.2 | -126.2 | -130.4 | <img src="/cec2018/ackley/shifted_Ackley_pso_50.png" height="50" width="100"> |
+
 
 | Code CEC’08 | Name | Dim | Bounds | Min. Value | Algo | Particles | Iter. | Evals | Stop. Criteria | Cognitive | Social | Inertia | Comput. Time (s) | # runs | Mean Value | Median Value | Best Value | Plot |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
