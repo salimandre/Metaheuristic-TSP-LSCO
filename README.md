@@ -23,4 +23,7 @@
 ## Discrete Optimization
 
 
+<p align="center">
+  <img src="tsp/gif/dj38_2_opt.gif" width="24%">
+</p>
 
