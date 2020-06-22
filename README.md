@@ -6,7 +6,7 @@ We ran our py scripts in a virtual environment whose list of packages can be fou
 
 As we wanted to see how well perform **Particle Swarm Optimization** on different objective functions and in different dimension settings we only used this one algorithm. We used the library **Pyswarms** for PSO evaluations. Pyswarms was able to handle boundary constraints although we think there were more powerful available implementations that we missed.
 
-For dim 50 we used a budget of 250K evaluations and for dim 500 a budget of 1.25M evaluations. We chose our cognitive, social and inertia parameters by performing a **random search** among 100 settings and each setting was evaluated 10 times on the Shifted Sphere function in dim 50. We kept these same parameters for every other computations. 
+For dim 50 we used a budget of 250K evaluations and for dim 500 a budget of 1.25M evaluations and computed 25 runs for every functions/dim. We chose our cognitive, social and inertia parameters by performing a **random search** among 100 settings and each setting was evaluated 10 times on the Shifted Sphere function in dim 50. We kept these same parameters for every other computations. 
 
 In dim 50 we tried two settings 1000 particles with 250 iterations and 5000 particles with 50 iterations. The latter proved to be better on Sphere and Rosenbrock functions. In dim 500 we tried the following two settings: 5000 particles with 250 iterations and 10000 particles with 100 iterations but they provided similar results.
 
